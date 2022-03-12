@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Rent </title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <style>
+        .heading {
+            text-align: center;
+            margin-bottom: 2rem;
+
+        }
+
+        .heading h2 {
+            font-size: 1.7rem;
+        }
+
+        .dashboard {
+            background: #fbfbfb;
+            border-radius: 2rem;
+        }
+
+        .dashboard {
+            background: #fbfbfb;
+            border-radius: 2rem;
+            margin-top: 100px;
+        }
+
+
+        .dashboard-container {
+            display: grid;
+            grid-template-rows: repeat(auto-fit, minmax(240px, auto));
+            gap: 3rem;
+            padding: 0 50px;
+            /* border: 2px solid green; */
+
+
+        }
+
+        .dashboard-container .box {
+            background: var(--bg-color);
+            border-radius: 1rem;
+            padding: 10px;
+            box-shadow: var(--box-shadow);
+            /* border: 2px solid black;  */
+            width: auto;
+            height: auto;
+        }
+
+        .dashboard-container .box:hover {
+            transform: translateY(-10px);
+            transition: 0.5s;
+        }
+
+        .dashboard-container .box img {
+            border-radius: 1rem;
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
+            /* border: 2px solid red; */
+            margin-top: 20px;
+        }
+
+        .apartment-container .box h3 {
+            font-weight: 600;
+            font-size: 1rem;
+            float: right;
+        }
+
+        .dashboard-container .box .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .dashboard-container .box .content .text h3 {
+            font-weight: 500;
+        }
+
+        .dashboard-container .box .content .text p {
+            font-size: 0.8rem;
+        }
+
+        .dashboard-container .box .content .icon {
+            display: flex;
+            align-items: left;
+            column-gap: 1rem;
+        }
+
+        .dashboard-container .box .content .icon .bx {
+            display: flex;
+            align-items:left;
+            font-size: 20px;
+        }
+
+        .dashboard-container .box .content .icon span {
+            font-size: 12px;
+            font-weight: 500px;
+            margin-left: 4px;
+        }
+
+        .Upgrade {
+            display: flex;
+            margin-top: 1rem;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <div class="nav container">
+            <!-- logo -->
+            <a href="/" class="logo"><i class='bx bxs-home-heart'></i>ভালো-বাসা</a>
+
+            <!-- menu icon -->
+            <input type="checkbox" name="" id="menu">
+            <label for="menu"><i class='bx bx-menu' id="menu-icon"></i></label>
+
+            <!-- Navigation Bar listing -->
+            <ul class="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/aboutus">About Us</a></li>
+                <li><a href="/tolet">to-let</a></li>
+                <li><a href="/appartments">Apartments</a></li>
+
+            </ul>
+
+            <!-- login button adding -->
+            <a href="/login" class="btn">Log In</a>
+
+        </div>
+
+    </header>
+
+
+
+
+
+    <section class="dashboard container" id="Dashboard">
+        <div class="heading">
+
+            <h2>Click Delete or Update to Modify Your Posts</h2>
+
+        </div>
+        <div class="dashboard-container container">
+            <!-- box1 -->
+            <div class="box">
+                <img src="Image/p1.jpg" alt="">
+
+                <div class="content">
+                    <div class="text">
+                        <h2>20000 Tk</h2>
+                        <h3>Monsur Villa</h3>
+                        <p id="Address">Gulshan,Dhaka</p>
+                        <p id="contactno">01198467135</p>
+                        <p id="aboutProperty">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam culpa
+                            quidem accusamus a commodi quisquam! </p>
+
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed'><span>4</span></i>
+                        <i class='bx bx-bath'><span>3</span></i>
+                    </div>
+
+                </div>
+                <div class="Upgrade">
+                    <a href="/" class="btn">Delete</a>
+                    <a href="/update" class="btn">Update</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- footer section  -->
+    <section class="footer">
+        <div class="footer-container container">
+            <h2>ভালো-বাসা</h2>
+            <div class="footer-box">
+                <h3>Quick links</h3>
+                <a href="#">Filter</a>
+                <a href="#">Map</a>
+                <a href="#">Top-chart</a>
+
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">+880 1623919385</a>
+                <a href="#">1814351072@uits.edu.bd</a>
+                <a href="#">1814351075@uits.edu.bd</a>
+
+                <div class="social">
+                    <!-- <h3>Social</h3> -->
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>&#169;Rass corp. All Right Reserved</p>
+    </div>
+
+
+</body>
+
+</html>
